@@ -1,11 +1,12 @@
-export const MissionaryTag = ({lname, gender}) => {
+export const MissionaryTag = ({lname, fname, gender}) => {
 	return (
 		<div id="tag">
 			<div id="backside">
 				<span id="barrio">Barrio Pinares 1 </span>
 			</div>
 			<div id="info">
-				<p id="name">{ gender === "m" ? "Elder" : "Hermana" } {lname}</p>
+				{/* <p id="name">{ gender === "m" ? "Elder" : "Hermana" } {lname}</p> */}
+				<p id="name">{fname} {lname}</p>
 				<p id="the">LA IGLESIA DE</p>
 				<p id="church">JESUCRISTO</p>
 				<p id="of">DE LOS SANTOS</p>

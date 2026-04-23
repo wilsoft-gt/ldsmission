@@ -13,7 +13,7 @@ function App() {
 		<div id="mainMenu">
 			<div className="left">
 				<h1>Mi gafete</h1>
-				<MissionaryTag lname={data.lname} gender={data.gender} />
+				<MissionaryTag lname={data.lname} fname={data.fname} gender={data.gender} />
 				<button onClick={ () => TakeScreenshot(`${data.fname}_${data.lname}_gafete`,"#tag", 9)} className="download">Descargar</button>
 			</div>
 			<div className="right">
